@@ -1,7 +1,7 @@
 
-const mrzb = {lat:26.473951,
-    lng: 109.412155,
-    address: '靖州烂泥冲', code: 418404};localStorage.setItem('zb',JSON.stringify(mrzb));
+const mrzb = {lat:39.62063,
+    lng: 118.19238,
+    address: '河北唐山路', code: 418404};localStorage.setItem('zb',JSON.stringify(mrzb));
 
 window.mrzb = mrzb
 

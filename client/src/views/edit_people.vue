@@ -126,11 +126,12 @@
                         //li 如果以游客身份创建，发布后将无法修改，但是家谱内成员可通过相匹配的有效证件申请成为该家谱创建者
                         //li 向家谱创建者申请管理后可以对家谱共同维护
                         li 因时间精力有限[个人独立开发]，暂时仅支持百家姓家谱
-                        //li 本小站乃一失业多年山区老农民工呕心独立创作，能力有限，还请某些江湖大佬手下留情莫要攻击，在此叩谢了
                         li
+                            //| 若有合作意向，请
+                    //       b(@click="showChat = !showChat") 点此狂call站长
+                    //.wechat(:class="{show:showChat}")
                             | 若有合作意向，请
-                            b(@click="showChat = !showChat") 点此狂call站长
-                    .wechat(:class="{show:showChat}")
+                            b @click="window.location.href='http://81.70.63.232/category/zi-wo-jie-shao.html'" 点此狂call站长
 
         .his_item(:class="{show:hisShow}")
             .close.icon-close(@click="hideHis")

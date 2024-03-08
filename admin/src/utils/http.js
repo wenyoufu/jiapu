@@ -34,6 +34,7 @@ const errorHandle = (status, msg) => {
         case 403:
         case 404:
             tip('请求的资源不存在\n'+msg);
+            break;
         case 411:
             localStorage.setItem('serverTime',msg)
             tip('请求超时请重试\n'+msg);

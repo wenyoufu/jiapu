@@ -16,7 +16,7 @@
                     input.inp(v-model='parmas.nickname', ref="nickname" type="text", placeholder="显示用的昵称"  maxlength="16")
 
                 p
-                    |注1：穷逼站长暂时没能力做短信验证，所以还请你牢记自己的账号和密码，真怕记不住，就只能
+                    |注1：站长暂时未做短信验证，所以还请你牢记自己的账号和密码，真怕记不住，就只能
                     b.hover(@click="showQA=!showQA") 设置密保问题
                     |作为辅助了；
                 .item(v-if="showQA" )

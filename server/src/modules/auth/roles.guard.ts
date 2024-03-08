@@ -63,23 +63,23 @@ export class RolesGuard implements CanActivate {
             user = this.jwtService.decode(token) as any;
             hasRole = roles.some(role => role === user.role + '');
         }
-        const mint = new Mint(JSON.parse(decodeURI(filterWord.word)));
-        let xxb = true;
+        // const mint = new Mint(JSON.parse(decodeURI(filterWord.word)));
+        // let xxb = true;
         // console.log(request.url)
         // console.log(roles)
         // console.log(hasRole)
-        if (request.body && request.url !== '/api/user/upload' && (request.body.name || request.body.ancestor || request.body.an || request.body.seniority || request.body.nickname || request.body.content)) {
-            const ws = mint.filterSync(JSON.stringify(request.body).toLowerCase().replace(/\s+/g, ""));
-            if (ws) {
-                xxb = ws.pass;
-            }
-        }
-        if (!xxb) {
+        // if (request.body && request.url !== '/api/user/upload' && (request.body.name || request.body.ancestor || request.body.an || request.body.seniority || request.body.nickname || request.body.content)) {
+        //     const ws = mint.filterSync(JSON.stringify(request.body).toLowerCase().replace(/\s+/g, ""));
+        //     if (ws) {
+        //         xxb = ws.pass;
+        //     }
+        // }
+        // if (!xxb) {
             // console.log(xxb);
-            throw new HttpException('小站生存不易，请勿发布非法内容，感恩', HttpStatus.FAILED_DEPENDENCY);
-        } else {
+            // throw new HttpException('小站生存不易，请勿发布非法内容，感恩', HttpStatus.FAILED_DEPENDENCY);
+        // } else {
             return (user && user.role && hasRole) || roles.length < 1;
-        }
+        // }
 
     }
 }
