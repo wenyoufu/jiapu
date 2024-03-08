@@ -1,6 +1,6 @@
 const mrzb = {lat:39.62063,
     lng:118.19238,
-    address:'河北省唐山市路南'};localStorage.setItem('zb',JSON.stringify(mrzb));
+    address:'唐山市路南'};localStorage.setItem('zb',JSON.stringify(mrzb));
 
 import Vue from 'vue'
 import App from './App.vue'
