@@ -34,7 +34,7 @@ export class ManageController {
             throw new HttpException('参数缺失', HttpStatus.BAD_REQUEST);
         }
         if (!manage.content || manage.content.length < 11) {
-            throw new HttpException('请认真输入申请内容', HttpStatus.BAD_REQUEST);
+            throw new HttpException('请认真输入申请内容[请留下电话号码]', HttpStatus.BAD_REQUEST);
         }
         let token = req.headers.authorization;
         if (/Bearer/.test(token)) {

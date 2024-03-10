@@ -107,14 +107,7 @@
                         li 因时间精力有限[个人独立开发]，暂时仅支持百家姓家谱
                         li
                           | 若有合作意向，请
-                          b.hover(onclick="window.open('http://81.70.63.232/category/zi-wo-jie-shao.html')") 自我简介
-                          | 点此狂call站长
-                         //   | 若有合作意向，请
-                         //   b(@click="showChat = !showChat") 点此狂call站长
-                    //.wechat(:class="{show:showChat}")
-                          //  | 若有合作意向，请
-                           // b @click="window.location.href='http://81.70.63.232/category/zi-wo-jie-shao.html'" 点此狂call站长
-
+                          b.hover(onclick="window.open('http://81.70.63.232/category/zi-wo-jie-shao.html')") 联系站长
         .his_item(:class="{show:hisShow}")
             .close.icon-close(@click="hideHis")
             h4 历史记录

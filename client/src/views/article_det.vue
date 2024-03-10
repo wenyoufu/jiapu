@@ -468,7 +468,7 @@ export default {
         },
         pushManage() {
             if (!this.manageContent || this.manageContent.length < 11) {
-                this.$toast.error('请认真输入申请内容')
+                this.$toast.error('请认真输入申请内容[请留下电话号码]')
                 this.$refs.Manage.focus()
             } else {
                 this.$post('manage', {
