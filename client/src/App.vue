@@ -66,9 +66,9 @@
                         i.icon-edit
                         span 创建
                 li
-                    router-link(to="/help", :exact="'capital'=='/chat'")
+                    router-link(to="/about", :exact="'capital'=='/chat'")
                         i.icon-menu7
-                        span 帮助
+                        span 关于我
                 li
                     router-link(to="/mine", :exact="'capital'=='/mine'")
                         i.icon-user-o

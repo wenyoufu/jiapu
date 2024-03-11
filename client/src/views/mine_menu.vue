@@ -20,8 +20,8 @@
         },
         data () {
             return {
-                menu:['任务处理','我的家谱','家谱成员','我的收藏','我的留言','图片管理','信息设置','使用帮助'],
-                link:['manage','article','people','favorites','comment','file','setting','help'],
+                menu:['任务处理','我的家谱','家谱成员','我的收藏','我的留言','图片管理','信息设置','关于'],
+                link:['manage','article','people','favorites','comment','file','setting','about'],
                 val: [0],
                 active: 0
             }

@@ -38,11 +38,9 @@
         },
         data () {
             return {
-                tabArr: ["关于我们","使用帮助","协议条款"],
-                tabInd: this.$route.query.tab || 1,
+                tabArr: ["关于我"],
+                tabInd: this.$route.query.tab || 0,
                 about: null,
-                help: null,
-                terms: null,
             }
         },
         mounted(){
