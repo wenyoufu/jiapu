@@ -366,10 +366,10 @@
                 if(this.form.public){
                     this.form.public = false
                 }else {
-                    if(this.form.content && this.form.content.length >= 200){
+                    if(this.form.content && this.form.content.length >= 10){
                         this.form.public = true
                     } else {
-                        this.$toast.error('公众人物要求200字以上详述内容')
+                        this.$toast.error('公众人物要求10字以上详述内容')
                         this.form.public = false
                     }
                 }
