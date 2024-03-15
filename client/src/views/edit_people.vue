@@ -106,7 +106,7 @@
                             i.icon-camera
                         input#upFile(type="file" accept="image/png, image/jpeg, image/gif" multiple onchange="upImg()")
 
-                .private_set.checkbox.hover(:class="{true:form.public}", @click="publicPeople()") 设为公众人物（要求人物详述至少200字以上）
+                .private_set.checkbox.hover(:class="{true:form.public}", @click="publicPeople()") 设为公众人物（要求人物详述至少10字以上）
 
                 .btn_group
                     .btn.empty.hide_pc(@click="form.content?review = true:$toast.error('还没有描述内容')") 预览
